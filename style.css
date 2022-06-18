@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url(./images/bg-intro-desktop.png);
+  background-color: hsl(0, 100%, 74%);
+  background-repeat: no-repeat;
+  color: white;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  width: 80%;
+  max-width: 1140px;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about {
+  width: 50%;
+  margin-right: 5px;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1em;
+}
+
+.text {
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 25px;
+}
+
+.info {
+  width: 50%;
+}
+
+.offer {
+  border: 1px solid hsl(248, 32%, 49%);
+  background-color: hsl(248, 32%, 49%);
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 5px;
+  font-weight: 400;
+  box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.form {
+  width: 100%;
+  background-color: white;
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 5px rgba(0, 0, 0, 0.2);
+}
+
+input {
+  display: block;
+  width: 95%;
+  height: 45px;
+  margin: 20px auto;
+  padding: 1.2em 2em;
+  border: 1px solid hsl(246, 25%, 77%);
+  color: hsl(249, 10%, 26%);
+  border-radius: 5px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  outline: none;
+}
+
+input:active,
+input:focus {
+  border: 1px solid rebeccapurple;
+  color: hsl(249, 10%, 26%);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+input::placeholder {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0px;
+}
+
+input[type="button"] {
+  text-transform: uppercase;
+  background-color: hsl(154, 59%, 51%);
+  padding: 10px;
+  border: none;
+  font-weight: 500;
+  color: white;
+  box-shadow: 0 3px hsl(154, 51%, 45%);
+}
+input[type="button"]:hover {
+  background-color: hsla(154, 59%, 51%, 0.7);
+  box-shadow: 0 3px hsla(154, 51%, 45%, 0.8);
+}
+
+.terms {
+  font-size: 10px;
+  color: hsl(246, 25%, 77%);
+  margin: 20px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: hsl(0, 100%, 74%);
+}
+@media (min-width: 375px) and (max-width: 600px) {
+  body {
+    background-image: url(./images/bg-intro-mobile.png);
+    height: 100vh;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  main {
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 90%;
+    height: auto;
+    align-items: unset;
+  }
+  .about,
+  .info {
+    width: 100%;
+    margin-top: 60px;
+  }
+  h1 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 35px;
+  }
+}
